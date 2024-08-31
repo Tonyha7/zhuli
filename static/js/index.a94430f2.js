@@ -7006,7 +7006,7 @@
           isSetLaunchDataFlag: !0,
           FirstRequestUpdateFinshedFlag: !1,
           ReQueryUpdateInfoFlag: !0,
-          IsQueryPermissionFlag: u("permissionrequested"),
+          IsQueryPermissionFlag: true,
           msgQueue: new c.default(),
           HomeViewNoticeDialogFlag: !1,
           ConsumeViewNoticeDialogFlag: {
@@ -7071,7 +7071,7 @@
           },
           SetQueryPermissionFlag: function (e, n) {
             s("permissionrequested", n),
-              (e.IsQueryPermissionFlag = u("permissionrequested"));
+              (e.IsQueryPermissionFlag = true);
           },
           SetConsumeViewNoticeDialogFlag: function (e, n) {
             e.ConsumeViewNoticeDialogFlag[n] = !0;
