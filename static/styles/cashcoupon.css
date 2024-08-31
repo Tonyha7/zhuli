@@ -1,0 +1,212 @@
+.cashcoupon {
+	width: 100%;
+	padding: 10px;
+}
+
+.cashcoupon-wrapper {
+	width: 100%;
+	display: flex;
+	background: #fff;
+	border-radius: 8px;
+}
+
+.cashcoupon-content {
+	flex: 1;
+	padding: 40upx;
+	border-radius: 8px 0 0 8px;
+	background: #fff;
+}
+
+.cashcoupon-title {
+	font-size: 35upx;
+	font-weight: bold;
+	display: inline-block;
+	word-break: break-all;
+}
+
+.cashcoupon-totalmoney {
+	font-size: 40upx;
+	color: #fc593b;
+}
+
+.yuan-text {
+	font-size: 20upx !important;
+	color: #000000;
+}
+
+.cashcoupon-dec {
+	display: inline-block;
+	margin: 0 20upx;
+	font-size: 20upx;
+	color: #ff8f30;
+	border: 1px solid #ff8f30;
+	border-radius: 10upx;
+	padding: 0upx 20upx;
+}
+
+.cashcoupon-tip,
+.cashcoupon-outsell-tip,
+.cashcoupon-buyed-tip,
+.cashcoupon-outcount-tip,
+.cashcoupon-outtime-tip {
+	position: relative;
+	flex: 0 0 100px;
+	text-align: center;
+	color: #fc593b;
+	border-radius: 0 8px 8px 0;
+	background: #fff;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-box-orient: vertical;
+	text-align: center;
+}
+
+.cashcoupon-tip::after,
+.cashcoupon-outsell-tip::after,
+.cashcoupon-buyed-tip::after,
+.cashcoupon-outcount-tip::after,
+.cashcoupon-outtime-tip::after {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url('../../static/youhuiyuan.png') bottom right no-repeat;
+	background-size: 60upx;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+/* 已售罄 */
+.cashcoupon-outsell-tip::after {
+	background: url('../../static/allsellout.png') center no-repeat !important;
+	background-size: 120upx !important;
+}
+
+/* 超过限购数量 */
+.cashcoupon-buyed-tip::after {
+	background: url('../../static/cashcouponbuyed.png') center no-repeat !important;
+	background-size: 120upx !important;
+}
+
+/* 已用完 */
+.cashcoupon-outcount-tip::after {
+	background: url('../../static/cashcouponoutcount.png') center no-repeat !important;
+	background-size: 120upx !important;
+}
+
+/* 已过期 */
+.cashcoupon-outtime-tip::after {
+	background: url('../../static/cashcouponouttime.png') center no-repeat !important;
+	background-size: 120upx !important;
+}
+
+.cashcoupon-outsell-tip::before,
+.cashcoupon-buyed-tip::before,
+.cashcoupon-outcount-tip::before,
+.cashcoupon-outtime-tip::before {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: url('../../static/youhuiquan_grey.png') bottom right no-repeat;
+	background-size: 60upx;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.cashcoupon-split-line {
+	position: relative;
+	flex: 0 0 0;
+	border-left: 1px solid #eee;
+	margin: 0 5px 0 3px;
+	background: #fff;
+}
+
+.cashcoupon-split-line:before,
+.cashcoupon-split-line:after {
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 8px;
+	background: #f7f7f7;
+	left: -9px;
+	z-index: 1;
+}
+
+.cashcoupon-split-line:before {
+	border-radius: 0 0 8px 8px;
+	top: 0;
+}
+
+.cashcoupon-split-line:after {
+	border-radius: 8px 8px 0 0;
+	bottom: 0;
+}
+
+.cashcoupon-sellmoney {
+	font-size: 12px;
+	position: relative;
+	top: 10upx;
+	/* text-decoration: line-through; */
+	color: #9e9e9e;
+}
+
+.cashcoupon-time {
+	font-size: 12px;
+	color: #9e9e9e;
+	position: relative;
+	top: 20upx;
+}
+
+.cashcoupon-pay-line {
+	height: 33%;
+	margin-top: 2px;
+	font-size: 12px;
+	color: #696969;
+}
+
+.cashcoupon-pay-user {
+	height: 33%;
+}
+
+.cashcoupon-pay-user-btn {
+	border-radius: 20px;
+	margin-top: 5px;
+}
+
+.cashcoupon-userlimit {
+	position: relative;
+	top: 20upx;
+	font-size: 12px;
+	color: #9e9e9e;
+}
+
+.rechargenumber {
+	border: 1px solid #ddd;
+	margin: 10upx;
+	height: 100upx;
+	line-height: 100upx;
+	background-color: white;
+	border-radius: 10upx;
+	white-space: nowrap;
+	/* 超出的部分隐藏 */
+	overflow: hidden;
+	/*文字用省略号替代超出的部分 */
+	text-overflow: ellipsis;
+	padding: 0 20upx;
+}
+
+/* 充值金额选中样式 */
+.rechargenumberactive {
+	border: 1px solid #ff001e;
+}
+
+/* 优惠券过期 */
+.cashcouponouttime {
+	color: #9e9e9e !important;
+}

@@ -1,0 +1,136 @@
+.uni-input-input[disabled="disabled"] {
+	pointer-events: none !important;
+}
+
+.cardview {
+	margin: 10px;
+	width: calc(100% - 40upx);
+	margin: 20upx;
+}
+
+.cardview>.cardview-container {
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	border-radius: 20upx;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex: 1;
+	justify-content: flex-start;
+	position: relative;
+}
+
+.title-img-container {
+	margin: 0 30upx;
+}
+
+.title-img-container>.title-img {
+	width: 80upx;
+	height: 80upx;
+	border-radius: 80upx;
+}
+
+.cardview-container>.content {
+	min-width: calc(90% - 60upx - 80upx - 100upx);
+	line-height: 50upx;
+	margin: 20upx 0;
+}
+
+.cardview-container>.content>.title {
+	font-family: microsoft yahei;
+	font-size: 36upx;
+}
+
+.cardview-container>.content>.status {
+	color: #a4d5be;
+	font-family: microsoft yahei;
+}
+
+.cardview-container>.content>.time {
+	color: #9f9f9f;
+}
+
+.cardview-container>.action {
+	margin-right: 30rpx;
+	position: absolute;
+	right: 0;
+	top: 70upx;
+}
+
+.money-text {
+	font-size: 40upx;
+}
+
+.warin-text {
+	color: #ff4021;
+}
+
+.noticemodal-title {
+	font-size: 36upx;
+	text-align: center;
+	margin: 20upx 0;
+}
+
+.noticemodal-content {
+	overflow-y: scroll;
+	text-align: left;
+	height: calc(100% - 140rpx);
+	min-height: calc(100% - 140rpx);
+	padding: 0 20upx;
+}
+
+.closemodal-icon {
+	position: fixed;
+	top: calc(80% + 20upx);
+	right: calc(50% - 35upx);
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70upx;
+	height: 70upx;
+	border-radius: 70upx;
+}
+
+/* 解决支付宝样式覆盖的问题单独重写 */
+.kf-search-form {
+	border: 1px solid #e5e5e5;
+	background-color: white;
+	line-height: 64rpx;
+	height: 64rpx;
+	font-size: 24rpx;
+	color: var(--black);
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	margin: 0 30rpx;
+}
+
+.kf-search-form input {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	padding-right: 30rpx;
+	height: 64rpx;
+	line-height: 64rpx;
+	font-size: 26rpx;
+	background-color: transparent;
+}
+
+.kf-search-form [class*="cuIcon-"] {
+	/* #ifdef MP-ALIPAY */
+	margin: 0 0 0 0.8em;
+	/* #endif */
+	/* #ifndef MP-ALIPAY */
+	margin: 0 0.5em 0 0.8em;
+	/* #endif */
+}
+
